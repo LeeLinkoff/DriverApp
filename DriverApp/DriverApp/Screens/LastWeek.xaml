@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DriverApp.Screens.LastWeek">
+
+    <StackLayout x:Name="topLevelStackLastWeek">
+        <Label Text="Last Week's Trips" HorizontalOptions="Center"></Label>
+        <Button Text="Refresh" Padding="0" FontSize="Micro" TextColor="White" BackgroundColor="#0000C8" HorizontalOptions="Center" Clicked="Button_Refresh"/>
+        <ScrollView>
+            <StackLayout x:Name="tripsListLastWeek" VerticalOptions="Start">
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>

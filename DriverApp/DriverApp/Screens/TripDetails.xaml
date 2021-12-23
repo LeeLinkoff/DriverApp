@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DriverApp.Screens.TripDetails">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0,50,0,0">
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <ContentPage.Content>
+        <StackLayout x:Name="topLevelStack">
+
+            <Button Text="Back" Padding="2" Margin="2" Grid.Row="1" Grid.Column="0" FontSize="Micro" TextColor="White" BackgroundColor="#0000C8" HorizontalOptions="Start" Clicked="Button_Back"/>
+            <Label Text="Trip Details" HorizontalOptions="CenterAndExpand" FontSize="Large" FontAttributes="Bold" Padding="7" />
+            <ActivityIndicator x:Name="activityIndicator" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+            <Button Text="Accept" Padding="4" Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" FontSize="Medium" TextColor="White" BackgroundColor="#0000C8" HorizontalOptions="Center" Clicked="Button_Status"  x:Name="StatusButton"/>
+
+            <ScrollView>
+                <StackLayout x:Name="tripDetails" VerticalOptions="Start">
+                </StackLayout>
+            </ScrollView>
+
+            <Button Text="Refresh" Margin="5" Padding="5" FontSize="Micro" TextColor="White" BackgroundColor="#0000C8" HorizontalOptions="Center" Clicked="Button_Refresh"/>
+
+            <Button x:Name="TakePictureButton" Text="Take Picture" Margin="5" Padding="5" FontSize="Micro" TextColor="White" BackgroundColor="#0000C8" HorizontalOptions="Center" Clicked="Button_TakePicture"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

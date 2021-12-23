@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:screens="clr-namespace:DriverApp.Screens;assembly=DriverApp"
+             x:Class="DriverApp.Screens.MainView">
+    
+    <ContentPage.Resources>
+        <StyleSheet Source="Styles.css" />
+    </ContentPage.Resources>
+
+    <StackLayout VerticalOptions="Center">
+        <Frame BorderColor="Gray"
+           CornerRadius="5"
+           Margin="40"
+           Padding="0"
+           HeightRequest="700"
+           VerticalOptions="Center"
+           BackgroundColor="FloralWhite"
+           HasShadow="True">
+            <StackLayout Spacing="20" Padding="50" VerticalOptions="Center" HorizontalOptions="Center">
+                <Image Source="navbarlogo.png" 
+                       HorizontalOptions="CenterAndExpand"
+                       Margin="40"/>
+                <Entry Placeholder="Username" x:Name="UserIdEntry" />
+                <Entry Placeholder="Password"  IsPassword="true" x:Name="PasswordEntry" />
+                <Label HorizontalTextAlignment="Center" x:Name="loginMsg" TextColor="Red"></Label> 
+                <StackLayout Margin="35">
+                    <Button Text=" Login " x:Name="loginBtn" BackgroundColor="Gray" TextColor="White" VerticalOptions="Center" WidthRequest="150" HorizontalOptions="Center" Clicked="OnLoginClick"></Button>
+                    <Button Text=" Exit " VerticalOptions="Start" HorizontalOptions="Center" Clicked="OnExitClick"></Button>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>

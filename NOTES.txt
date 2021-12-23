@@ -1,0 +1,5 @@
+* Phone MAC address: 70:1F:3C:B7:52:5C
+
+* API calls are obscured
+
+* Linked to my Github repo

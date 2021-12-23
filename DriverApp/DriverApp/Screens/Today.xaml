@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Title="Today" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DriverApp.Screens.Today">
+
+    <StackLayout x:Name="topLevelStackToday">
+        <Label Text="Today's Trips" HorizontalOptions="Center"></Label>
+        <Button Text="Refresh" Padding="0" FontSize="Micro" TextColor="White" BackgroundColor="#0000C8" HorizontalOptions="Center" Clicked="Button_Refresh"/>
+        <ScrollView>
+            <StackLayout x:Name="tripsListToday" VerticalOptions="Start">
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>
+
+

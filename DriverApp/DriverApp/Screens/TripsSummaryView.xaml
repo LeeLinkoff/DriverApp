@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DriverApp"
+             xmlns:screens="clr-namespace:DriverApp.Screens;assembly=DriverApp"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             x:Class="DriverApp.Screens.TripsSummaryView">
+    
+    <screens:LastWeek Title="Last 7 Days" />
+    <screens:Today Title="Today" />
+    <screens:NextWeek Title="Next 7 Days" />
+
+</TabbedPage>
